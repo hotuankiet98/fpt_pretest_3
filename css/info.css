@@ -1,0 +1,36 @@
+#info-student-id{
+    display: flex;
+    justify-content: center;
+}
+#info-student-id div{
+    width: 60%;
+    padding: 10px;
+    font-size:20px;
+    border: 2px solid;
+    border-radius: 5px;
+    position: absolute;
+    top:30%;
+}
+#info-student-id h2{
+    text-align: center;
+    font-size: 30px;
+    color:red;
+    margin: 0;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+table tr td:first-child{
+    font-weight: bold;
+    color:green;
+}
+table{
+    width: 100%;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}
+h3{
+    margin:5px 0;
+}

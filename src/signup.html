@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Pretest3</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header-img" src="../img/p3_logo.png" alt="">
+    </header>
+    <nav>
+        <a href="../index.html" class="nav-item">Home</a>
+        <a href="" class="nav-item">Academics</a>
+        <a href="" class="nav-item">Research</a>
+        <a href="" class="nav-item-main">About Us</a>
+        <a href="" class="nav-item">E-Library</a>
+        <a style="color:black"  href="" class="nav-item">Sign up</a>
+        <a href="" class="nav-item">Sign in</a>
+    </nav>
+    <content>
+        <form onsubmit="return submitInfo()" action="./info.html">
+            <div id="member-info">
+                <div class="form-table">
+                    <h2>Member Information</h2>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input class="input-text" type="text" id="username" pattern="^[a-z_][a-z0-9_\.]{4,19}$" placeholder="&nbsp" required ></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender
+                            </td>
+                            <td>
+                                <input checked type="radio" name="gender" class="gender" value="male">Male
+                                <input type="radio" name="gender" class="gender" value="female">Female
+                            </td>
+                        </tr>
+                            <td>Address:</td>
+                            <td><input class="input-text" type="text" id="address" placeholder="&nbsp" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input class="input-text" type="email" id="email" pattern="\w+@\w+\.[a-z]{2,3}" placeholder="&nbsp" required></td>
+                        </tr>
+                            <td class="label-input">Phone:</td>
+                            <td><input class="input-text" type="text" id="phone" pattern="^\d{3}-\d{4}\d{0,3}$" placeholder="&nbsp" required></td>
+                        </tr>
+                        <tr>
+                            <td>Qualification:</td>
+                            <td> 
+                                <select class="qualification">
+                                    <option value="Bachelor degree">Bachelor degree</option>
+                                    <option value="Master">Master</option>
+                                    <option value="PhD">PhD</option>
+                                    <option value="None">None</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="button-id">
+                        <input class="input-button-item" type="submit" href="./welcome.html">
+                        <input class="input-button-item" type="reset">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </content>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./signup.js"></script>
+</body>
+</html>
